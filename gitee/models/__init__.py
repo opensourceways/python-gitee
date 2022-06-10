@@ -46,8 +46,6 @@ from gitee.models.enterprise_basic import EnterpriseBasic
 from gitee.models.enterprise_member import EnterpriseMember
 from gitee.models.enterprise_members_body import EnterpriseMembersBody
 from gitee.models.enterprise_members_body1 import EnterpriseMembersBody1
-from gitee.models.enterprise_repos_body import EnterpriseReposBody
-from gitee.models.enterprise_repos_body1 import EnterpriseReposBody1
 from gitee.models.enterprise_week_report_body import EnterpriseWeekReportBody
 from gitee.models.enterprise_week_report_body1 import EnterpriseWeekReportBody1
 from gitee.models.event import Event
