@@ -1,11 +1,12 @@
 # gitee.GitDataApi
 
-All URIs are relative to *//gitee.com/api*
+All URIs are relative to *https://gitee.com/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**get_v5_repos_owner_repo_git_blobs_sha**](GitDataApi.md#get_v5_repos_owner_repo_git_blobs_sha) | **GET** /v5/repos/{owner}/{repo}/git/blobs/{sha} | 获取文件Blob
 [**get_v5_repos_owner_repo_git_trees_sha**](GitDataApi.md#get_v5_repos_owner_repo_git_trees_sha) | **GET** /v5/repos/{owner}/{repo}/git/trees/{sha} | 获取目录Tree
+
 
 # **get_v5_repos_owner_repo_git_blobs_sha**
 > Blob get_v5_repos_owner_repo_git_blobs_sha(owner, repo, sha, access_token=access_token)
@@ -56,7 +57,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -112,7 +113,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

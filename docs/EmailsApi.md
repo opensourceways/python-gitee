@@ -1,10 +1,11 @@
 # gitee.EmailsApi
 
-All URIs are relative to *//gitee.com/api*
+All URIs are relative to *https://gitee.com/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**get_v5_emails**](EmailsApi.md#get_v5_emails) | **GET** /v5/emails | 获取授权用户的所有邮箱
+
 
 # **get_v5_emails**
 > list[Email] get_v5_emails(access_token=access_token)
@@ -49,7 +50,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

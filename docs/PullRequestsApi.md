@@ -1,6 +1,6 @@
 # gitee.PullRequestsApi
 
-All URIs are relative to *//gitee.com/api*
+All URIs are relative to *https://gitee.com/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -28,6 +28,7 @@ Method | HTTP request | Description
 [**post_v5_repos_owner_repo_pulls_number_testers**](PullRequestsApi.md#post_v5_repos_owner_repo_pulls_number_testers) | **POST** /v5/repos/{owner}/{repo}/pulls/{number}/testers | 指派用户测试 Pull Request
 [**put_v5_repos_owner_repo_pulls_number_labels**](PullRequestsApi.md#put_v5_repos_owner_repo_pulls_number_labels) | **PUT** /v5/repos/{owner}/{repo}/pulls/{number}/labels | 替换Pull Request 所有标签
 [**put_v5_repos_owner_repo_pulls_number_merge**](PullRequestsApi.md#put_v5_repos_owner_repo_pulls_number_merge) | **PUT** /v5/repos/{owner}/{repo}/pulls/{number}/merge | 合并Pull Request
+
 
 # **delete_v5_repos_owner_repo_pulls_comments_id**
 > delete_v5_repos_owner_repo_pulls_comments_id(owner, repo, id, access_token=access_token)
@@ -77,8 +78,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -132,8 +133,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -188,7 +189,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -244,7 +245,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -314,7 +315,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -376,7 +377,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -430,7 +431,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -484,7 +485,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -542,7 +543,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -596,7 +597,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -650,7 +651,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -766,7 +767,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -819,8 +820,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -875,13 +876,13 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_v5_repos_owner_repo_pulls_comments_id**
-> PullRequestComments patch_v5_repos_owner_repo_pulls_comments_id(body, owner, repo, id)
+> PullRequestComments patch_v5_repos_owner_repo_pulls_comments_id(owner, repo, id, body)
 
 编辑评论
 
@@ -897,14 +898,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = gitee.PullRequestsApi()
-body = gitee.PullRequestCommentPatchParam() # PullRequestCommentPatchParam | 必填。评论内容
 owner = 'owner_example' # str | 仓库所属空间地址(企业、组织或个人的地址path)
 repo = 'repo_example' # str | 仓库路径(path)
 id = 56 # int | 评论的ID
+body = gitee.PullRequestCommentPatchParam() # PullRequestCommentPatchParam | 必填。评论内容
 
 try:
     # 编辑评论
-    api_response = api_instance.patch_v5_repos_owner_repo_pulls_comments_id(body, owner, repo, id)
+    api_response = api_instance.patch_v5_repos_owner_repo_pulls_comments_id(owner, repo, id, body)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PullRequestsApi->patch_v5_repos_owner_repo_pulls_comments_id: %s\n" % e)
@@ -914,10 +915,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**PullRequestCommentPatchParam**](PullRequestCommentPatchParam.md)| 必填。评论内容 | 
  **owner** | **str**| 仓库所属空间地址(企业、组织或个人的地址path) | 
  **repo** | **str**| 仓库路径(path) | 
  **id** | **int**| 评论的ID | 
+ **body** | [**PullRequestCommentPatchParam**](PullRequestCommentPatchParam.md)| 必填。评论内容 | 
 
 ### Return type
 
@@ -935,7 +936,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_v5_repos_owner_repo_pulls_number**
-> PullRequest patch_v5_repos_owner_repo_pulls_number(body, owner, repo, number)
+> PullRequest patch_v5_repos_owner_repo_pulls_number(owner, repo, number, body)
 
 更新Pull Request信息
 
@@ -951,14 +952,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = gitee.PullRequestsApi()
-body = gitee.PullRequestUpdateParam() # PullRequestUpdateParam | 可选。Pull Request 内容
 owner = 'owner_example' # str | 仓库所属空间地址(企业、组织或个人的地址path)
 repo = 'repo_example' # str | 仓库路径(path)
 number = 56 # int | 第几个PR，即本仓库PR的序数
+body = gitee.PullRequestUpdateParam() # PullRequestUpdateParam | 可选。Pull Request 内容
 
 try:
     # 更新Pull Request信息
-    api_response = api_instance.patch_v5_repos_owner_repo_pulls_number(body, owner, repo, number)
+    api_response = api_instance.patch_v5_repos_owner_repo_pulls_number(owner, repo, number, body)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PullRequestsApi->patch_v5_repos_owner_repo_pulls_number: %s\n" % e)
@@ -968,10 +969,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**PullRequestUpdateParam**](PullRequestUpdateParam.md)| 可选。Pull Request 内容 | 
  **owner** | **str**| 仓库所属空间地址(企业、组织或个人的地址path) | 
  **repo** | **str**| 仓库路径(path) | 
  **number** | **int**| 第几个PR，即本仓库PR的序数 | 
+ **body** | [**PullRequestUpdateParam**](PullRequestUpdateParam.md)| 可选。Pull Request 内容 | 
 
 ### Return type
 
@@ -989,7 +990,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **post_v5_repos_owner_repo_pulls**
-> PullRequest post_v5_repos_owner_repo_pulls(body, owner, repo)
+> PullRequest post_v5_repos_owner_repo_pulls(owner, repo, body)
 
 创建Pull Request
 
@@ -1005,13 +1006,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = gitee.PullRequestsApi()
-body = gitee.CreatePullRequestParam() # CreatePullRequestParam | pr的信息
 owner = 'owner_example' # str | 仓库所属空间地址(企业、组织或个人的地址path)
 repo = 'repo_example' # str | 仓库路径(path)
+body = gitee.CreatePullRequestParam() # CreatePullRequestParam | pr的信息
 
 try:
     # 创建Pull Request
-    api_response = api_instance.post_v5_repos_owner_repo_pulls(body, owner, repo)
+    api_response = api_instance.post_v5_repos_owner_repo_pulls(owner, repo, body)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PullRequestsApi->post_v5_repos_owner_repo_pulls: %s\n" % e)
@@ -1021,9 +1022,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**CreatePullRequestParam**](CreatePullRequestParam.md)| pr的信息 | 
  **owner** | **str**| 仓库所属空间地址(企业、组织或个人的地址path) | 
  **repo** | **str**| 仓库路径(path) | 
+ **body** | [**CreatePullRequestParam**](CreatePullRequestParam.md)| pr的信息 | 
 
 ### Return type
 
@@ -1041,7 +1042,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **post_v5_repos_owner_repo_pulls_number_assignees**
-> PullRequest post_v5_repos_owner_repo_pulls_number_assignees(body, owner, repo, number)
+> PullRequest post_v5_repos_owner_repo_pulls_number_assignees(owner, repo, number, body)
 
 指派用户审查 Pull Request
 
@@ -1057,14 +1058,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = gitee.PullRequestsApi()
-body = gitee.PullRequestAssigneePostParam() # PullRequestAssigneePostParam | 必选，标签的内容
 owner = 'owner_example' # str | 仓库所属空间地址(企业、组织或个人的地址path)
 repo = 'repo_example' # str | 仓库路径(path)
 number = 56 # int | 第几个PR，即本仓库PR的序数
+body = gitee.PullRequestAssigneePostParam() # PullRequestAssigneePostParam | 必选，标签的内容
 
 try:
     # 指派用户审查 Pull Request
-    api_response = api_instance.post_v5_repos_owner_repo_pulls_number_assignees(body, owner, repo, number)
+    api_response = api_instance.post_v5_repos_owner_repo_pulls_number_assignees(owner, repo, number, body)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PullRequestsApi->post_v5_repos_owner_repo_pulls_number_assignees: %s\n" % e)
@@ -1074,10 +1075,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**PullRequestAssigneePostParam**](PullRequestAssigneePostParam.md)| 必选，标签的内容 | 
  **owner** | **str**| 仓库所属空间地址(企业、组织或个人的地址path) | 
  **repo** | **str**| 仓库路径(path) | 
  **number** | **int**| 第几个PR，即本仓库PR的序数 | 
+ **body** | [**PullRequestAssigneePostParam**](PullRequestAssigneePostParam.md)| 必选，标签的内容 | 
 
 ### Return type
 
@@ -1095,7 +1096,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **post_v5_repos_owner_repo_pulls_number_comments**
-> PullRequestComments post_v5_repos_owner_repo_pulls_number_comments(body, owner, repo, number)
+> PullRequestComments post_v5_repos_owner_repo_pulls_number_comments(owner, repo, number, body)
 
 提交Pull Request评论
 
@@ -1111,14 +1112,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = gitee.PullRequestsApi()
-body = gitee.PullRequestCommentPostParam() # PullRequestCommentPostParam | 评论内容
 owner = 'owner_example' # str | 仓库所属空间地址(企业、组织或个人的地址path)
 repo = 'repo_example' # str | 仓库路径(path)
 number = 56 # int | 第几个PR，即本仓库PR的序数
+body = gitee.PullRequestCommentPostParam() # PullRequestCommentPostParam | 评论内容
 
 try:
     # 提交Pull Request评论
-    api_response = api_instance.post_v5_repos_owner_repo_pulls_number_comments(body, owner, repo, number)
+    api_response = api_instance.post_v5_repos_owner_repo_pulls_number_comments(owner, repo, number, body)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PullRequestsApi->post_v5_repos_owner_repo_pulls_number_comments: %s\n" % e)
@@ -1128,10 +1129,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**PullRequestCommentPostParam**](PullRequestCommentPostParam.md)| 评论内容 | 
  **owner** | **str**| 仓库所属空间地址(企业、组织或个人的地址path) | 
  **repo** | **str**| 仓库路径(path) | 
  **number** | **int**| 第几个PR，即本仓库PR的序数 | 
+ **body** | [**PullRequestCommentPostParam**](PullRequestCommentPostParam.md)| 评论内容 | 
 
 ### Return type
 
@@ -1149,7 +1150,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **post_v5_repos_owner_repo_pulls_number_labels**
-> Label post_v5_repos_owner_repo_pulls_number_labels(body, owner, repo, number)
+> Label post_v5_repos_owner_repo_pulls_number_labels(owner, repo, number, body)
 
 创建 Pull Request 标签
 
@@ -1165,14 +1166,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = gitee.PullRequestsApi()
-body = gitee.PullRequestLabelPostParam() # PullRequestLabelPostParam | 必选，标签的内容
 owner = 'owner_example' # str | 仓库所属空间地址(企业、组织或个人的地址path)
 repo = 'repo_example' # str | 仓库路径(path)
 number = 56 # int | 第几个PR，即本仓库PR的序数
+body = gitee.PullRequestLabelPostParam() # PullRequestLabelPostParam | 必选，标签的内容
 
 try:
     # 创建 Pull Request 标签
-    api_response = api_instance.post_v5_repos_owner_repo_pulls_number_labels(body, owner, repo, number)
+    api_response = api_instance.post_v5_repos_owner_repo_pulls_number_labels(owner, repo, number, body)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PullRequestsApi->post_v5_repos_owner_repo_pulls_number_labels: %s\n" % e)
@@ -1182,10 +1183,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**PullRequestLabelPostParam**](PullRequestLabelPostParam.md)| 必选，标签的内容 | 
  **owner** | **str**| 仓库所属空间地址(企业、组织或个人的地址path) | 
  **repo** | **str**| 仓库路径(path) | 
  **number** | **int**| 第几个PR，即本仓库PR的序数 | 
+ **body** | [**PullRequestLabelPostParam**](PullRequestLabelPostParam.md)| 必选，标签的内容 | 
 
 ### Return type
 
@@ -1203,7 +1204,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **post_v5_repos_owner_repo_pulls_number_testers**
-> PullRequest post_v5_repos_owner_repo_pulls_number_testers(body, owner, repo, number)
+> PullRequest post_v5_repos_owner_repo_pulls_number_testers(owner, repo, number, testers, access_token=access_token)
 
 指派用户测试 Pull Request
 
@@ -1219,14 +1220,15 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = gitee.PullRequestsApi()
-body = gitee.NumberTestersBody() # NumberTestersBody | 
 owner = 'owner_example' # str | 仓库所属空间地址(企业、组织或个人的地址path)
 repo = 'repo_example' # str | 仓库路径(path)
 number = 56 # int | 第几个PR，即本仓库PR的序数
+testers = 'testers_example' # str | 用户的个人空间地址, 以 , 分隔
+access_token = 'access_token_example' # str | 用户授权码 (optional)
 
 try:
     # 指派用户测试 Pull Request
-    api_response = api_instance.post_v5_repos_owner_repo_pulls_number_testers(body, owner, repo, number)
+    api_response = api_instance.post_v5_repos_owner_repo_pulls_number_testers(owner, repo, number, testers, access_token=access_token)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PullRequestsApi->post_v5_repos_owner_repo_pulls_number_testers: %s\n" % e)
@@ -1236,10 +1238,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**NumberTestersBody**](NumberTestersBody.md)|  | 
  **owner** | **str**| 仓库所属空间地址(企业、组织或个人的地址path) | 
  **repo** | **str**| 仓库路径(path) | 
  **number** | **int**| 第几个PR，即本仓库PR的序数 | 
+ **testers** | **str**| 用户的个人空间地址, 以 , 分隔 | 
+ **access_token** | **str**| 用户授权码 | [optional] 
 
 ### Return type
 
@@ -1257,7 +1260,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **put_v5_repos_owner_repo_pulls_number_labels**
-> list[Label] put_v5_repos_owner_repo_pulls_number_labels(body, owner, repo, number)
+> list[Label] put_v5_repos_owner_repo_pulls_number_labels(owner, repo, number, body)
 
 替换Pull Request 所有标签
 
@@ -1273,14 +1276,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = gitee.PullRequestsApi()
-body = gitee.PullRequestLabelPostParam() # PullRequestLabelPostParam | 必选，标签的内容
 owner = 'owner_example' # str | 仓库所属空间地址(企业、组织或个人的地址path)
 repo = 'repo_example' # str | 仓库路径(path)
 number = 56 # int | 第几个PR，即本仓库PR的序数
+body = gitee.PullRequestLabelPostParam() # PullRequestLabelPostParam | 必选，标签的内容
 
 try:
     # 替换Pull Request 所有标签
-    api_response = api_instance.put_v5_repos_owner_repo_pulls_number_labels(body, owner, repo, number)
+    api_response = api_instance.put_v5_repos_owner_repo_pulls_number_labels(owner, repo, number, body)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PullRequestsApi->put_v5_repos_owner_repo_pulls_number_labels: %s\n" % e)
@@ -1290,10 +1293,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**PullRequestLabelPostParam**](PullRequestLabelPostParam.md)| 必选，标签的内容 | 
  **owner** | **str**| 仓库所属空间地址(企业、组织或个人的地址path) | 
  **repo** | **str**| 仓库路径(path) | 
  **number** | **int**| 第几个PR，即本仓库PR的序数 | 
+ **body** | [**PullRequestLabelPostParam**](PullRequestLabelPostParam.md)| 必选，标签的内容 | 
 
 ### Return type
 
@@ -1311,7 +1314,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **put_v5_repos_owner_repo_pulls_number_merge**
-> put_v5_repos_owner_repo_pulls_number_merge(body, owner, repo, number)
+> put_v5_repos_owner_repo_pulls_number_merge(owner, repo, number, body)
 
 合并Pull Request
 
@@ -1327,14 +1330,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = gitee.PullRequestsApi()
-body = gitee.PullRequestMergePutParam() # PullRequestMergePutParam | PullRequest合入参数
 owner = 'owner_example' # str | 仓库所属空间地址(企业、组织或个人的地址path)
 repo = 'repo_example' # str | 仓库路径(path)
 number = 56 # int | 第几个PR，即本仓库PR的序数
+body = gitee.PullRequestMergePutParam() # PullRequestMergePutParam | PullRequest合入参数
 
 try:
     # 合并Pull Request
-    api_instance.put_v5_repos_owner_repo_pulls_number_merge(body, owner, repo, number)
+    api_instance.put_v5_repos_owner_repo_pulls_number_merge(owner, repo, number, body)
 except ApiException as e:
     print("Exception when calling PullRequestsApi->put_v5_repos_owner_repo_pulls_number_merge: %s\n" % e)
 ```
@@ -1343,10 +1346,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**PullRequestMergePutParam**](PullRequestMergePutParam.md)| PullRequest合入参数 | 
  **owner** | **str**| 仓库所属空间地址(企业、组织或个人的地址path) | 
  **repo** | **str**| 仓库路径(path) | 
  **number** | **int**| 第几个PR，即本仓库PR的序数 | 
+ **body** | [**PullRequestMergePutParam**](PullRequestMergePutParam.md)| PullRequest合入参数 | 
 
 ### Return type
 
@@ -1359,7 +1362,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json, multipart/form-data
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 

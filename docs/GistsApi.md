@@ -1,6 +1,6 @@
 # gitee.GistsApi
 
-All URIs are relative to *//gitee.com/api*
+All URIs are relative to *https://gitee.com/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -23,6 +23,7 @@ Method | HTTP request | Description
 [**post_v5_gists_gist_id_comments**](GistsApi.md#post_v5_gists_gist_id_comments) | **POST** /v5/gists/{gist_id}/comments | 增加代码片段的评论
 [**post_v5_gists_id_forks**](GistsApi.md#post_v5_gists_id_forks) | **POST** /v5/gists/{id}/forks | Fork代码片段
 [**put_v5_gists_id_star**](GistsApi.md#put_v5_gists_id_star) | **PUT** /v5/gists/{id}/star | Star代码片段
+
 
 # **delete_v5_gists_gist_id_comments_id**
 > delete_v5_gists_gist_id_comments_id(gist_id, id, access_token=access_token)
@@ -70,8 +71,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -119,8 +120,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -168,8 +169,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -222,7 +223,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -276,7 +277,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -328,7 +329,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -378,7 +379,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -428,7 +429,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -482,7 +483,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -531,8 +532,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -585,7 +586,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -639,7 +640,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -693,13 +694,13 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_v5_gists_gist_id_comments_id**
-> CodeComment patch_v5_gists_gist_id_comments_id(body, gist_id, id)
+> CodeComment patch_v5_gists_gist_id_comments_id(gist_id, id, body, access_token=access_token)
 
 修改代码片段的评论
 
@@ -715,13 +716,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = gitee.GistsApi()
-body = gitee.CommentsIdBody2() # CommentsIdBody2 | 
 gist_id = 'gist_id_example' # str | 代码片段的ID
 id = 56 # int | 评论的ID
+body = 'body_example' # str | 评论内容
+access_token = 'access_token_example' # str | 用户授权码 (optional)
 
 try:
     # 修改代码片段的评论
-    api_response = api_instance.patch_v5_gists_gist_id_comments_id(body, gist_id, id)
+    api_response = api_instance.patch_v5_gists_gist_id_comments_id(gist_id, id, body, access_token=access_token)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling GistsApi->patch_v5_gists_gist_id_comments_id: %s\n" % e)
@@ -731,9 +733,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**CommentsIdBody2**](CommentsIdBody2.md)|  | 
  **gist_id** | **str**| 代码片段的ID | 
  **id** | **int**| 评论的ID | 
+ **body** | **str**| 评论内容 | 
+ **access_token** | **str**| 用户授权码 | [optional] 
 
 ### Return type
 
@@ -751,7 +754,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_v5_gists_id**
-> CodeForksHistory patch_v5_gists_id(id, body=body)
+> CodeForksHistory patch_v5_gists_id(id, access_token=access_token, files=files, description=description, public=public)
 
 修改代码片段
 
@@ -768,11 +771,14 @@ from pprint import pprint
 # create an instance of the API class
 api_instance = gitee.GistsApi()
 id = 'id_example' # str | 代码片段的ID
-body = gitee.GistsIdBody() # GistsIdBody |  (optional)
+access_token = 'access_token_example' # str | 用户授权码 (optional)
+files = '/path/to/file.txt' # file | Hash形式的代码片段文件名以及文件内容。如: { \"file1.txt\": { \"content\": \"String file contents\" } } (optional)
+description = 'description_example' # str | 代码片段描述，1~30个字符 (optional)
+public = true # bool | 公开/私有，默认: 私有 (optional)
 
 try:
     # 修改代码片段
-    api_response = api_instance.patch_v5_gists_id(id, body=body)
+    api_response = api_instance.patch_v5_gists_id(id, access_token=access_token, files=files, description=description, public=public)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling GistsApi->patch_v5_gists_id: %s\n" % e)
@@ -783,7 +789,10 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| 代码片段的ID | 
- **body** | [**GistsIdBody**](GistsIdBody.md)|  | [optional] 
+ **access_token** | **str**| 用户授权码 | [optional] 
+ **files** | **file**| Hash形式的代码片段文件名以及文件内容。如: { \&quot;file1.txt\&quot;: { \&quot;content\&quot;: \&quot;String file contents\&quot; } } | [optional] 
+ **description** | **str**| 代码片段描述，1~30个字符 | [optional] 
+ **public** | **bool**| 公开/私有，默认: 私有 | [optional] 
 
 ### Return type
 
@@ -801,7 +810,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **post_v5_gists**
-> list[CodeForksHistory] post_v5_gists(body)
+> list[CodeForksHistory] post_v5_gists(files, description, access_token=access_token, public=public)
 
 创建代码片段
 
@@ -817,11 +826,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = gitee.GistsApi()
-body = gitee.V5GistsBody() # V5GistsBody | 
+files = '/path/to/file.txt' # file | Hash形式的代码片段文件名以及文件内容。如: { \"file1.txt\": { \"content\": \"String file contents\" } }
+description = 'description_example' # str | 代码片段描述，1~30个字符
+access_token = 'access_token_example' # str | 用户授权码 (optional)
+public = true # bool | 公开/私有，默认: 私有 (optional)
 
 try:
     # 创建代码片段
-    api_response = api_instance.post_v5_gists(body)
+    api_response = api_instance.post_v5_gists(files, description, access_token=access_token, public=public)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling GistsApi->post_v5_gists: %s\n" % e)
@@ -831,7 +843,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**V5GistsBody**](V5GistsBody.md)|  | 
+ **files** | **file**| Hash形式的代码片段文件名以及文件内容。如: { \&quot;file1.txt\&quot;: { \&quot;content\&quot;: \&quot;String file contents\&quot; } } | 
+ **description** | **str**| 代码片段描述，1~30个字符 | 
+ **access_token** | **str**| 用户授权码 | [optional] 
+ **public** | **bool**| 公开/私有，默认: 私有 | [optional] 
 
 ### Return type
 
@@ -849,7 +864,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **post_v5_gists_gist_id_comments**
-> CodeComment post_v5_gists_gist_id_comments(body, gist_id)
+> CodeComment post_v5_gists_gist_id_comments(gist_id, body, access_token=access_token)
 
 增加代码片段的评论
 
@@ -865,12 +880,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = gitee.GistsApi()
-body = gitee.GistIdCommentsBody() # GistIdCommentsBody | 
 gist_id = 'gist_id_example' # str | 代码片段的ID
+body = 'body_example' # str | 评论内容
+access_token = 'access_token_example' # str | 用户授权码 (optional)
 
 try:
     # 增加代码片段的评论
-    api_response = api_instance.post_v5_gists_gist_id_comments(body, gist_id)
+    api_response = api_instance.post_v5_gists_gist_id_comments(gist_id, body, access_token=access_token)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling GistsApi->post_v5_gists_gist_id_comments: %s\n" % e)
@@ -880,8 +896,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**GistIdCommentsBody**](GistIdCommentsBody.md)|  | 
  **gist_id** | **str**| 代码片段的ID | 
+ **body** | **str**| 评论内容 | 
+ **access_token** | **str**| 用户授权码 | [optional] 
 
 ### Return type
 
@@ -899,7 +916,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **post_v5_gists_id_forks**
-> post_v5_gists_id_forks(id, body=body)
+> post_v5_gists_id_forks(id, access_token=access_token)
 
 Fork代码片段
 
@@ -916,11 +933,11 @@ from pprint import pprint
 # create an instance of the API class
 api_instance = gitee.GistsApi()
 id = 'id_example' # str | 代码片段的ID
-body = gitee.IdForksBody() # IdForksBody |  (optional)
+access_token = 'access_token_example' # str | 用户授权码 (optional)
 
 try:
     # Fork代码片段
-    api_instance.post_v5_gists_id_forks(id, body=body)
+    api_instance.post_v5_gists_id_forks(id, access_token=access_token)
 except ApiException as e:
     print("Exception when calling GistsApi->post_v5_gists_id_forks: %s\n" % e)
 ```
@@ -930,7 +947,7 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| 代码片段的ID | 
- **body** | [**IdForksBody**](IdForksBody.md)|  | [optional] 
+ **access_token** | **str**| 用户授权码 | [optional] 
 
 ### Return type
 
@@ -943,12 +960,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json, multipart/form-data
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **put_v5_gists_id_star**
-> put_v5_gists_id_star(id, body=body)
+> put_v5_gists_id_star(id, access_token=access_token)
 
 Star代码片段
 
@@ -965,11 +982,11 @@ from pprint import pprint
 # create an instance of the API class
 api_instance = gitee.GistsApi()
 id = 'id_example' # str | 代码片段的ID
-body = gitee.IdStarBody() # IdStarBody |  (optional)
+access_token = 'access_token_example' # str | 用户授权码 (optional)
 
 try:
     # Star代码片段
-    api_instance.put_v5_gists_id_star(id, body=body)
+    api_instance.put_v5_gists_id_star(id, access_token=access_token)
 except ApiException as e:
     print("Exception when calling GistsApi->put_v5_gists_id_star: %s\n" % e)
 ```
@@ -979,7 +996,7 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| 代码片段的ID | 
- **body** | [**IdStarBody**](IdStarBody.md)|  | [optional] 
+ **access_token** | **str**| 用户授权码 | [optional] 
 
 ### Return type
 
@@ -992,7 +1009,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json, multipart/form-data
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
