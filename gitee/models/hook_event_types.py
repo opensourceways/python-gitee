@@ -1,7 +1,13 @@
 from dataclasses import dataclass, field
 from typing import List, Optional
 
-from gitee.models.hook_event_models import *
+from gitee.models.hook_event_models import NoteHook
+from gitee.models.hook_event_models import ProjectHook
+from gitee.models.hook_event_models import UserHook
+from gitee.models.hook_event_models import EnterpriseHook
+from gitee.models.hook_event_models import PullRequestHook
+from gitee.models.hook_event_models import IssueHook
+from gitee.models.hook_event_models import CommitHook
 
 
 @dataclass
