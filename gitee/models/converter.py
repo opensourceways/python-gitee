@@ -1,12 +1,22 @@
 import json
 import dacite
 
-from gitee.models.hook_event_types import *
+from gitee.models.hook_event_types import NoteEvent
+from gitee.models.hook_event_types import ProjectHook
+from gitee.models.hook_event_types import UserHook
+from gitee.models.hook_event_types import EnterpriseHook
+from gitee.models.hook_event_types import PullRequestHook
+from gitee.models.hook_event_types import IssueHook
+from gitee.models.hook_event_types import IssueEvent
+from gitee.models.hook_event_types import PullRequestEvent
+from gitee.models.hook_event_types import RepoInfo
+from gitee.models.hook_event_types import PushEvent
+from gitee.models.hook_event_types import CommitHook
 
 
 def format_note_event(event: NoteEvent) -> NoteEvent:
     """
-    Init NoteEvent to avoid errors when using nested class to get payload parameters
+    Init NoteEvent to avoid errors when using nested class to get payload parameters.
     """
     if not event.comment:
         event.comment = NoteEvent()
@@ -29,7 +39,7 @@ def format_note_event(event: NoteEvent) -> NoteEvent:
 
 def format_issue_event(event: IssueEvent) -> IssueEvent:
     """
-    Init IssueEvent to avoid errors when using nested class to get payload parameters
+    Init IssueEvent to avoid errors when using nested class to get payload parameters.
     """
     if not event.issue:
         event.issue = IssueHook()
@@ -54,7 +64,7 @@ def format_issue_event(event: IssueEvent) -> IssueEvent:
 
 def format_pr_event(event: PullRequestEvent) -> PullRequestEvent:
     """
-    Init PullRequestEvent to avoid errors when using nested class to get payload parameters
+    Init PullRequestEvent to avoid errors when using nested class to get payload parameters.
     """
     if not event.pull_request:
         event.pull_request = PullRequestHook()
@@ -81,7 +91,7 @@ def format_pr_event(event: PullRequestEvent) -> PullRequestEvent:
 
 def format_push_event(event: PushEvent) -> PushEvent:
     """
-    Init PushEvent to avoid errors when using nested class to get payload parameters
+    Init PushEvent to avoid errors when using nested class to get payload parameters.
     """
     if not event.commits:
         event.commits = []
