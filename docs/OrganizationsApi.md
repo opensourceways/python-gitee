@@ -1,6 +1,6 @@
 # gitee.OrganizationsApi
 
-All URIs are relative to *//gitee.com/api*
+All URIs are relative to *https://gitee.com/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -17,6 +17,7 @@ Method | HTTP request | Description
 [**patch_v5_user_memberships_orgs_org**](OrganizationsApi.md#patch_v5_user_memberships_orgs_org) | **PATCH** /v5/user/memberships/orgs/{org} | 更新授权用户在一个组织的成员资料
 [**post_v5_users_organization**](OrganizationsApi.md#post_v5_users_organization) | **POST** /v5/users/organization | 创建组织
 [**put_v5_orgs_org_memberships_username**](OrganizationsApi.md#put_v5_orgs_org_memberships_username) | **PUT** /v5/orgs/{org}/memberships/{username} | 增加或更新授权用户所管理组织的成员
+
 
 # **delete_v5_orgs_org_memberships_username**
 > delete_v5_orgs_org_memberships_username(org, username, access_token=access_token)
@@ -64,8 +65,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -113,8 +114,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -163,7 +164,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -219,7 +220,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -271,7 +272,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -325,7 +326,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -375,7 +376,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -429,7 +430,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -483,13 +484,13 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_v5_orgs_org**
-> GroupDetail patch_v5_orgs_org(org, body=body)
+> GroupDetail patch_v5_orgs_org(org, access_token=access_token, email=email, location=location, name=name, description=description, html_url=html_url)
 
 更新授权用户所管理的组织资料
 
@@ -506,11 +507,16 @@ from pprint import pprint
 # create an instance of the API class
 api_instance = gitee.OrganizationsApi()
 org = 'org_example' # str | 组织的路径(path/login)
-body = gitee.OrgsOrgBody2() # OrgsOrgBody2 |  (optional)
+access_token = 'access_token_example' # str | 用户授权码 (optional)
+email = 'email_example' # str | 组织公开的邮箱地址 (optional)
+location = 'location_example' # str | 组织所在地 (optional)
+name = 'name_example' # str | 组织名称 (optional)
+description = 'description_example' # str | 组织简介 (optional)
+html_url = 'html_url_example' # str | 组织站点 (optional)
 
 try:
     # 更新授权用户所管理的组织资料
-    api_response = api_instance.patch_v5_orgs_org(org, body=body)
+    api_response = api_instance.patch_v5_orgs_org(org, access_token=access_token, email=email, location=location, name=name, description=description, html_url=html_url)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling OrganizationsApi->patch_v5_orgs_org: %s\n" % e)
@@ -521,7 +527,12 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **org** | **str**| 组织的路径(path/login) | 
- **body** | [**OrgsOrgBody2**](OrgsOrgBody2.md)|  | [optional] 
+ **access_token** | **str**| 用户授权码 | [optional] 
+ **email** | **str**| 组织公开的邮箱地址 | [optional] 
+ **location** | **str**| 组织所在地 | [optional] 
+ **name** | **str**| 组织名称 | [optional] 
+ **description** | **str**| 组织简介 | [optional] 
+ **html_url** | **str**| 组织站点 | [optional] 
 
 ### Return type
 
@@ -539,7 +550,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_v5_user_memberships_orgs_org**
-> GroupMember patch_v5_user_memberships_orgs_org(org, body=body)
+> GroupMember patch_v5_user_memberships_orgs_org(org, access_token=access_token, remark=remark)
 
 更新授权用户在一个组织的成员资料
 
@@ -556,11 +567,12 @@ from pprint import pprint
 # create an instance of the API class
 api_instance = gitee.OrganizationsApi()
 org = 'org_example' # str | 组织的路径(path/login)
-body = gitee.OrgsOrgBody() # OrgsOrgBody |  (optional)
+access_token = 'access_token_example' # str | 用户授权码 (optional)
+remark = 'remark_example' # str | 在组织中的备注信息 (optional)
 
 try:
     # 更新授权用户在一个组织的成员资料
-    api_response = api_instance.patch_v5_user_memberships_orgs_org(org, body=body)
+    api_response = api_instance.patch_v5_user_memberships_orgs_org(org, access_token=access_token, remark=remark)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling OrganizationsApi->patch_v5_user_memberships_orgs_org: %s\n" % e)
@@ -571,7 +583,8 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **org** | **str**| 组织的路径(path/login) | 
- **body** | [**OrgsOrgBody**](OrgsOrgBody.md)|  | [optional] 
+ **access_token** | **str**| 用户授权码 | [optional] 
+ **remark** | **str**| 在组织中的备注信息 | [optional] 
 
 ### Return type
 
@@ -589,7 +602,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **post_v5_users_organization**
-> Group post_v5_users_organization(body)
+> Group post_v5_users_organization(name, org, access_token=access_token, description=description)
 
 创建组织
 
@@ -605,11 +618,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = gitee.OrganizationsApi()
-body = gitee.UsersOrganizationBody() # UsersOrganizationBody | 
+name = 'name_example' # str | 组织名称
+org = 'org_example' # str | 组织的路径(path/login)
+access_token = 'access_token_example' # str | 用户授权码 (optional)
+description = 'description_example' # str | 组织描述 (optional)
 
 try:
     # 创建组织
-    api_response = api_instance.post_v5_users_organization(body)
+    api_response = api_instance.post_v5_users_organization(name, org, access_token=access_token, description=description)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling OrganizationsApi->post_v5_users_organization: %s\n" % e)
@@ -619,7 +635,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**UsersOrganizationBody**](UsersOrganizationBody.md)|  | 
+ **name** | **str**| 组织名称 | 
+ **org** | **str**| 组织的路径(path/login) | 
+ **access_token** | **str**| 用户授权码 | [optional] 
+ **description** | **str**| 组织描述 | [optional] 
 
 ### Return type
 
@@ -637,7 +656,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **put_v5_orgs_org_memberships_username**
-> GroupMember put_v5_orgs_org_memberships_username(org, username, body=body)
+> GroupMember put_v5_orgs_org_memberships_username(org, username, access_token=access_token, role=role)
 
 增加或更新授权用户所管理组织的成员
 
@@ -655,11 +674,12 @@ from pprint import pprint
 api_instance = gitee.OrganizationsApi()
 org = 'org_example' # str | 组织的路径(path/login)
 username = 'username_example' # str | 用户名(username/login)
-body = gitee.MembershipsUsernameBody() # MembershipsUsernameBody |  (optional)
+access_token = 'access_token_example' # str | 用户授权码 (optional)
+role = 'member' # str | 设置用户在组织的角色 (optional) (default to member)
 
 try:
     # 增加或更新授权用户所管理组织的成员
-    api_response = api_instance.put_v5_orgs_org_memberships_username(org, username, body=body)
+    api_response = api_instance.put_v5_orgs_org_memberships_username(org, username, access_token=access_token, role=role)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling OrganizationsApi->put_v5_orgs_org_memberships_username: %s\n" % e)
@@ -671,7 +691,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **org** | **str**| 组织的路径(path/login) | 
  **username** | **str**| 用户名(username/login) | 
- **body** | [**MembershipsUsernameBody**](MembershipsUsernameBody.md)|  | [optional] 
+ **access_token** | **str**| 用户授权码 | [optional] 
+ **role** | **str**| 设置用户在组织的角色 | [optional] [default to member]
 
 ### Return type
 

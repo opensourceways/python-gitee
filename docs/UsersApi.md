@@ -1,6 +1,6 @@
 # gitee.UsersApi
 
-All URIs are relative to *//gitee.com/api*
+All URIs are relative to *https://gitee.com/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -22,6 +22,7 @@ Method | HTTP request | Description
 [**patch_v5_user**](UsersApi.md#patch_v5_user) | **PATCH** /v5/user | 更新授权用户的资料
 [**post_v5_user_keys**](UsersApi.md#post_v5_user_keys) | **POST** /v5/user/keys | 添加一个公钥
 [**put_v5_user_following_username**](UsersApi.md#put_v5_user_following_username) | **PUT** /v5/user/following/{username} | 关注一个用户
+
 
 # **delete_v5_user_following_username**
 > delete_v5_user_following_username(username, access_token=access_token)
@@ -67,8 +68,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -116,8 +117,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -164,7 +165,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -216,7 +217,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -268,7 +269,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -317,8 +318,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -369,7 +370,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -419,7 +420,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -469,7 +470,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -519,7 +520,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -569,7 +570,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -623,7 +624,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -677,7 +678,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -728,8 +729,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -782,13 +783,13 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_v5_user**
-> User patch_v5_user(body=body)
+> User patch_v5_user(access_token=access_token, name=name, blog=blog, weibo=weibo, bio=bio)
 
 更新授权用户的资料
 
@@ -804,11 +805,15 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = gitee.UsersApi()
-body = gitee.V5UserBody() # V5UserBody |  (optional)
+access_token = 'access_token_example' # str | 用户授权码 (optional)
+name = 'name_example' # str | 昵称 (optional)
+blog = 'blog_example' # str | 微博链接 (optional)
+weibo = 'weibo_example' # str | 博客站点 (optional)
+bio = 'bio_example' # str | 自我介绍 (optional)
 
 try:
     # 更新授权用户的资料
-    api_response = api_instance.patch_v5_user(body=body)
+    api_response = api_instance.patch_v5_user(access_token=access_token, name=name, blog=blog, weibo=weibo, bio=bio)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling UsersApi->patch_v5_user: %s\n" % e)
@@ -818,7 +823,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**V5UserBody**](V5UserBody.md)|  | [optional] 
+ **access_token** | **str**| 用户授权码 | [optional] 
+ **name** | **str**| 昵称 | [optional] 
+ **blog** | **str**| 微博链接 | [optional] 
+ **weibo** | **str**| 博客站点 | [optional] 
+ **bio** | **str**| 自我介绍 | [optional] 
 
 ### Return type
 
@@ -836,7 +845,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **post_v5_user_keys**
-> SSHKey post_v5_user_keys(body)
+> SSHKey post_v5_user_keys(key, title, access_token=access_token)
 
 添加一个公钥
 
@@ -852,11 +861,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = gitee.UsersApi()
-body = gitee.UserKeysBody() # UserKeysBody | 
+key = 'key_example' # str | 公钥内容
+title = 'title_example' # str | 公钥名称
+access_token = 'access_token_example' # str | 用户授权码 (optional)
 
 try:
     # 添加一个公钥
-    api_response = api_instance.post_v5_user_keys(body)
+    api_response = api_instance.post_v5_user_keys(key, title, access_token=access_token)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling UsersApi->post_v5_user_keys: %s\n" % e)
@@ -866,7 +877,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**UserKeysBody**](UserKeysBody.md)|  | 
+ **key** | **str**| 公钥内容 | 
+ **title** | **str**| 公钥名称 | 
+ **access_token** | **str**| 用户授权码 | [optional] 
 
 ### Return type
 
@@ -884,7 +897,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **put_v5_user_following_username**
-> put_v5_user_following_username(username, body=body)
+> put_v5_user_following_username(username, access_token=access_token)
 
 关注一个用户
 
@@ -901,11 +914,11 @@ from pprint import pprint
 # create an instance of the API class
 api_instance = gitee.UsersApi()
 username = 'username_example' # str | 用户名(username/login)
-body = gitee.FollowingUsernameBody() # FollowingUsernameBody |  (optional)
+access_token = 'access_token_example' # str | 用户授权码 (optional)
 
 try:
     # 关注一个用户
-    api_instance.put_v5_user_following_username(username, body=body)
+    api_instance.put_v5_user_following_username(username, access_token=access_token)
 except ApiException as e:
     print("Exception when calling UsersApi->put_v5_user_following_username: %s\n" % e)
 ```
@@ -915,7 +928,7 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **username** | **str**| 用户名(username/login) | 
- **body** | [**FollowingUsernameBody**](FollowingUsernameBody.md)|  | [optional] 
+ **access_token** | **str**| 用户授权码 | [optional] 
 
 ### Return type
 
@@ -928,7 +941,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json, multipart/form-data
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
