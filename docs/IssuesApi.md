@@ -1,6 +1,6 @@
 # gitee.IssuesApi
 
-All URIs are relative to *//gitee.com/api*
+All URIs are relative to *https://gitee.com/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -22,6 +22,7 @@ Method | HTTP request | Description
 [**patch_v5_repos_owner_repo_issues_comments_id**](IssuesApi.md#patch_v5_repos_owner_repo_issues_comments_id) | **PATCH** /v5/repos/{owner}/{repo}/issues/comments/{id} | 更新Issue某条评论
 [**post_v5_repos_owner_issues**](IssuesApi.md#post_v5_repos_owner_issues) | **POST** /v5/repos/{owner}/issues | 创建Issue
 [**post_v5_repos_owner_repo_issues_number_comments**](IssuesApi.md#post_v5_repos_owner_repo_issues_number_comments) | **POST** /v5/repos/{owner}/{repo}/issues/{number}/comments | 创建某个Issue评论
+
 
 # **delete_v5_repos_owner_repo_issues_comments_id**
 > delete_v5_repos_owner_repo_issues_comments_id(owner, repo, id, access_token=access_token)
@@ -71,8 +72,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -151,7 +152,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -203,7 +204,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -259,7 +260,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -315,7 +316,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -387,7 +388,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -461,7 +462,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -517,7 +518,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -599,7 +600,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -661,7 +662,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -715,7 +716,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -769,7 +770,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -829,7 +830,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -901,13 +902,13 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_v5_repos_owner_issues_number**
-> Issue patch_v5_repos_owner_issues_number(body, owner, number)
+> Issue patch_v5_repos_owner_issues_number(owner, number, body)
 
 更新Issue
 
@@ -923,13 +924,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = gitee.IssuesApi()
-body = gitee.IssueUpdateParam() # IssueUpdateParam | 可选。Issue 内容
 owner = 'owner_example' # str | 仓库所属空间地址(企业、组织或个人的地址path)
 number = 'number_example' # str | Issue 编号(区分大小写，无需添加 # 号)
+body = gitee.IssueUpdateParam() # IssueUpdateParam | 可选。Issue 内容
 
 try:
     # 更新Issue
-    api_response = api_instance.patch_v5_repos_owner_issues_number(body, owner, number)
+    api_response = api_instance.patch_v5_repos_owner_issues_number(owner, number, body)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling IssuesApi->patch_v5_repos_owner_issues_number: %s\n" % e)
@@ -939,9 +940,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**IssueUpdateParam**](IssueUpdateParam.md)| 可选。Issue 内容 | 
  **owner** | **str**| 仓库所属空间地址(企业、组织或个人的地址path) | 
  **number** | **str**| Issue 编号(区分大小写，无需添加 # 号) | 
+ **body** | [**IssueUpdateParam**](IssueUpdateParam.md)| 可选。Issue 内容 | 
 
 ### Return type
 
@@ -959,7 +960,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_v5_repos_owner_repo_issues_comments_id**
-> Note patch_v5_repos_owner_repo_issues_comments_id(body, owner, repo, id)
+> Note patch_v5_repos_owner_repo_issues_comments_id(owner, repo, id, body)
 
 更新Issue某条评论
 
@@ -975,14 +976,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = gitee.IssuesApi()
-body = gitee.IssueCommentPatchParam() # IssueCommentPatchParam | 必填。评论内容
 owner = 'owner_example' # str | 仓库所属空间地址(企业、组织或个人的地址path)
 repo = 'repo_example' # str | 仓库路径(path)
 id = 56 # int | 评论的ID
+body = gitee.IssueCommentPatchParam() # IssueCommentPatchParam | 必填。评论内容
 
 try:
     # 更新Issue某条评论
-    api_response = api_instance.patch_v5_repos_owner_repo_issues_comments_id(body, owner, repo, id)
+    api_response = api_instance.patch_v5_repos_owner_repo_issues_comments_id(owner, repo, id, body)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling IssuesApi->patch_v5_repos_owner_repo_issues_comments_id: %s\n" % e)
@@ -992,10 +993,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**IssueCommentPatchParam**](IssueCommentPatchParam.md)| 必填。评论内容 | 
  **owner** | **str**| 仓库所属空间地址(企业、组织或个人的地址path) | 
  **repo** | **str**| 仓库路径(path) | 
  **id** | **int**| 评论的ID | 
+ **body** | [**IssueCommentPatchParam**](IssueCommentPatchParam.md)| 必填。评论内容 | 
 
 ### Return type
 
@@ -1013,7 +1014,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **post_v5_repos_owner_issues**
-> Issue post_v5_repos_owner_issues(body, owner)
+> Issue post_v5_repos_owner_issues(owner, body)
 
 创建Issue
 
@@ -1029,12 +1030,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = gitee.IssuesApi()
-body = gitee.IssueCreateParam() # IssueCreateParam | 可选。Issue 内容
 owner = 'owner_example' # str | 仓库所属空间地址(企业、组织或个人的地址path)
+body = gitee.IssueCreateParam() # IssueCreateParam | 可选。Issue 内容
 
 try:
     # 创建Issue
-    api_response = api_instance.post_v5_repos_owner_issues(body, owner)
+    api_response = api_instance.post_v5_repos_owner_issues(owner, body)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling IssuesApi->post_v5_repos_owner_issues: %s\n" % e)
@@ -1044,8 +1045,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**IssueCreateParam**](IssueCreateParam.md)| 可选。Issue 内容 | 
  **owner** | **str**| 仓库所属空间地址(企业、组织或个人的地址path) | 
+ **body** | [**IssueCreateParam**](IssueCreateParam.md)| 可选。Issue 内容 | 
 
 ### Return type
 
@@ -1063,7 +1064,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **post_v5_repos_owner_repo_issues_number_comments**
-> Note post_v5_repos_owner_repo_issues_number_comments(body, owner, repo, number)
+> Note post_v5_repos_owner_repo_issues_number_comments(owner, repo, number, body)
 
 创建某个Issue评论
 
@@ -1079,14 +1080,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = gitee.IssuesApi()
-body = gitee.IssueCommentPostParam() # IssueCommentPostParam | Issue comment内容
 owner = 'owner_example' # str | 仓库所属空间地址(企业、组织或个人的地址path)
 repo = 'repo_example' # str | 仓库路径(path)
 number = 'number_example' # str | Issue 编号(区分大小写，无需添加 # 号)
+body = gitee.IssueCommentPostParam() # IssueCommentPostParam | Issue comment内容
 
 try:
     # 创建某个Issue评论
-    api_response = api_instance.post_v5_repos_owner_repo_issues_number_comments(body, owner, repo, number)
+    api_response = api_instance.post_v5_repos_owner_repo_issues_number_comments(owner, repo, number, body)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling IssuesApi->post_v5_repos_owner_repo_issues_number_comments: %s\n" % e)
@@ -1096,10 +1097,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**IssueCommentPostParam**](IssueCommentPostParam.md)| Issue comment内容 | 
  **owner** | **str**| 仓库所属空间地址(企业、组织或个人的地址path) | 
  **repo** | **str**| 仓库路径(path) | 
  **number** | **str**| Issue 编号(区分大小写，无需添加 # 号) | 
+ **body** | [**IssueCommentPostParam**](IssueCommentPostParam.md)| Issue comment内容 | 
 
 ### Return type
 

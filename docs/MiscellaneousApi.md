@@ -1,6 +1,6 @@
 # gitee.MiscellaneousApi
 
-All URIs are relative to *//gitee.com/api*
+All URIs are relative to *https://gitee.com/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -13,6 +13,7 @@ Method | HTTP request | Description
 [**get_v5_licenses_license_raw**](MiscellaneousApi.md#get_v5_licenses_license_raw) | **GET** /v5/licenses/{license}/raw | 获取一个开源许可协议原始文件
 [**get_v5_repos_owner_repo_license**](MiscellaneousApi.md#get_v5_repos_owner_repo_license) | **GET** /v5/repos/{owner}/{repo}/license | 获取一个仓库使用的开源许可协议
 [**post_v5_markdown**](MiscellaneousApi.md#post_v5_markdown) | **POST** /v5/markdown | 渲染 Markdown 文本
+
 
 # **get_v5_emojis**
 > get_v5_emojis(access_token=access_token)
@@ -56,8 +57,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -103,8 +104,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -152,8 +153,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -201,8 +202,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -248,8 +249,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -297,8 +298,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -346,8 +347,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -397,13 +398,13 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **post_v5_markdown**
-> post_v5_markdown(body)
+> post_v5_markdown(text, access_token=access_token)
 
 渲染 Markdown 文本
 
@@ -419,11 +420,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = gitee.MiscellaneousApi()
-body = gitee.V5MarkdownBody() # V5MarkdownBody | 
+text = 'text_example' # str | Markdown 文本
+access_token = 'access_token_example' # str | 用户授权码 (optional)
 
 try:
     # 渲染 Markdown 文本
-    api_instance.post_v5_markdown(body)
+    api_instance.post_v5_markdown(text, access_token=access_token)
 except ApiException as e:
     print("Exception when calling MiscellaneousApi->post_v5_markdown: %s\n" % e)
 ```
@@ -432,7 +434,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**V5MarkdownBody**](V5MarkdownBody.md)|  | 
+ **text** | **str**| Markdown 文本 | 
+ **access_token** | **str**| 用户授权码 | [optional] 
 
 ### Return type
 
@@ -445,7 +448,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json, multipart/form-data
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 

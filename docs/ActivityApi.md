@@ -1,6 +1,6 @@
 # gitee.ActivityApi
 
-All URIs are relative to *//gitee.com/api*
+All URIs are relative to *https://gitee.com/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -37,6 +37,7 @@ Method | HTTP request | Description
 [**put_v5_repos_owner_repo_notifications**](ActivityApi.md#put_v5_repos_owner_repo_notifications) | **PUT** /v5/repos/{owner}/{repo}/notifications | 标记一个仓库里的通知为已读
 [**put_v5_user_starred_owner_repo**](ActivityApi.md#put_v5_user_starred_owner_repo) | **PUT** /v5/user/starred/{owner}/{repo} | star 一个仓库
 [**put_v5_user_subscriptions_owner_repo**](ActivityApi.md#put_v5_user_subscriptions_owner_repo) | **PUT** /v5/user/subscriptions/{owner}/{repo} | watch 一个仓库
+
 
 # **delete_v5_user_starred_owner_repo**
 > delete_v5_user_starred_owner_repo(owner, repo, access_token=access_token)
@@ -84,8 +85,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -135,8 +136,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -187,7 +188,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -243,7 +244,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -293,7 +294,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -353,7 +354,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -403,7 +404,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -467,7 +468,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -517,7 +518,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -571,7 +572,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -627,7 +628,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -695,7 +696,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -751,7 +752,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -807,7 +808,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -863,7 +864,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -914,8 +915,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -970,7 +971,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1021,8 +1022,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -1075,7 +1076,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1131,7 +1132,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1185,7 +1186,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1239,7 +1240,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1293,7 +1294,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1351,7 +1352,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1409,13 +1410,13 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_v5_notifications_messages_id**
-> patch_v5_notifications_messages_id(id, body=body)
+> patch_v5_notifications_messages_id(id, access_token=access_token)
 
 标记一条私信为已读
 
@@ -1432,11 +1433,11 @@ from pprint import pprint
 # create an instance of the API class
 api_instance = gitee.ActivityApi()
 id = 'id_example' # str | 私信的 ID
-body = gitee.MessagesIdBody() # MessagesIdBody |  (optional)
+access_token = 'access_token_example' # str | 用户授权码 (optional)
 
 try:
     # 标记一条私信为已读
-    api_instance.patch_v5_notifications_messages_id(id, body=body)
+    api_instance.patch_v5_notifications_messages_id(id, access_token=access_token)
 except ApiException as e:
     print("Exception when calling ActivityApi->patch_v5_notifications_messages_id: %s\n" % e)
 ```
@@ -1446,7 +1447,7 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| 私信的 ID | 
- **body** | [**MessagesIdBody**](MessagesIdBody.md)|  | [optional] 
+ **access_token** | **str**| 用户授权码 | [optional] 
 
 ### Return type
 
@@ -1459,12 +1460,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json, multipart/form-data
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_v5_notifications_threads_id**
-> patch_v5_notifications_threads_id(id, body=body)
+> patch_v5_notifications_threads_id(id, access_token=access_token)
 
 标记一条通知为已读
 
@@ -1481,11 +1482,11 @@ from pprint import pprint
 # create an instance of the API class
 api_instance = gitee.ActivityApi()
 id = 'id_example' # str | 通知的 ID
-body = gitee.ThreadsIdBody() # ThreadsIdBody |  (optional)
+access_token = 'access_token_example' # str | 用户授权码 (optional)
 
 try:
     # 标记一条通知为已读
-    api_instance.patch_v5_notifications_threads_id(id, body=body)
+    api_instance.patch_v5_notifications_threads_id(id, access_token=access_token)
 except ApiException as e:
     print("Exception when calling ActivityApi->patch_v5_notifications_threads_id: %s\n" % e)
 ```
@@ -1495,7 +1496,7 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| 通知的 ID | 
- **body** | [**ThreadsIdBody**](ThreadsIdBody.md)|  | [optional] 
+ **access_token** | **str**| 用户授权码 | [optional] 
 
 ### Return type
 
@@ -1508,12 +1509,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json, multipart/form-data
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **post_v5_notifications_messages**
-> UserMessage post_v5_notifications_messages(body)
+> UserMessage post_v5_notifications_messages(username, content, access_token=access_token)
 
 发送私信给指定用户
 
@@ -1529,11 +1530,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = gitee.ActivityApi()
-body = gitee.NotificationsMessagesBody2() # NotificationsMessagesBody2 | 
+username = 'username_example' # str | 用户名(username/login)
+content = 'content_example' # str | 私信内容
+access_token = 'access_token_example' # str | 用户授权码 (optional)
 
 try:
     # 发送私信给指定用户
-    api_response = api_instance.post_v5_notifications_messages(body)
+    api_response = api_instance.post_v5_notifications_messages(username, content, access_token=access_token)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling ActivityApi->post_v5_notifications_messages: %s\n" % e)
@@ -1543,7 +1546,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**NotificationsMessagesBody2**](NotificationsMessagesBody2.md)|  | 
+ **username** | **str**| 用户名(username/login) | 
+ **content** | **str**| 私信内容 | 
+ **access_token** | **str**| 用户授权码 | [optional] 
 
 ### Return type
 
@@ -1561,7 +1566,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **put_v5_notifications_messages**
-> put_v5_notifications_messages(body=body)
+> put_v5_notifications_messages(access_token=access_token, ids=ids)
 
 标记所有私信为已读
 
@@ -1577,11 +1582,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = gitee.ActivityApi()
-body = gitee.NotificationsMessagesBody() # NotificationsMessagesBody |  (optional)
+access_token = 'access_token_example' # str | 用户授权码 (optional)
+ids = 'ids_example' # str | 指定一组私信 ID，以 , 分隔 (optional)
 
 try:
     # 标记所有私信为已读
-    api_instance.put_v5_notifications_messages(body=body)
+    api_instance.put_v5_notifications_messages(access_token=access_token, ids=ids)
 except ApiException as e:
     print("Exception when calling ActivityApi->put_v5_notifications_messages: %s\n" % e)
 ```
@@ -1590,7 +1596,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**NotificationsMessagesBody**](NotificationsMessagesBody.md)|  | [optional] 
+ **access_token** | **str**| 用户授权码 | [optional] 
+ **ids** | **str**| 指定一组私信 ID，以 , 分隔 | [optional] 
 
 ### Return type
 
@@ -1603,12 +1610,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json, multipart/form-data
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **put_v5_notifications_threads**
-> put_v5_notifications_threads(body=body)
+> put_v5_notifications_threads(access_token=access_token, ids=ids)
 
 标记所有通知为已读
 
@@ -1624,11 +1631,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = gitee.ActivityApi()
-body = gitee.NotificationsThreadsBody() # NotificationsThreadsBody |  (optional)
+access_token = 'access_token_example' # str | 用户授权码 (optional)
+ids = 'ids_example' # str | 指定一组通知 ID，以 , 分隔 (optional)
 
 try:
     # 标记所有通知为已读
-    api_instance.put_v5_notifications_threads(body=body)
+    api_instance.put_v5_notifications_threads(access_token=access_token, ids=ids)
 except ApiException as e:
     print("Exception when calling ActivityApi->put_v5_notifications_threads: %s\n" % e)
 ```
@@ -1637,7 +1645,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**NotificationsThreadsBody**](NotificationsThreadsBody.md)|  | [optional] 
+ **access_token** | **str**| 用户授权码 | [optional] 
+ **ids** | **str**| 指定一组通知 ID，以 , 分隔 | [optional] 
 
 ### Return type
 
@@ -1650,12 +1659,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json, multipart/form-data
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **put_v5_repos_owner_repo_notifications**
-> put_v5_repos_owner_repo_notifications(owner, repo, body=body)
+> put_v5_repos_owner_repo_notifications(owner, repo, access_token=access_token, ids=ids)
 
 标记一个仓库里的通知为已读
 
@@ -1673,11 +1682,12 @@ from pprint import pprint
 api_instance = gitee.ActivityApi()
 owner = 'owner_example' # str | 仓库所属空间地址(企业、组织或个人的地址path)
 repo = 'repo_example' # str | 仓库路径(path)
-body = gitee.RepoNotificationsBody() # RepoNotificationsBody |  (optional)
+access_token = 'access_token_example' # str | 用户授权码 (optional)
+ids = 'ids_example' # str | 指定一组通知 ID，以 , 分隔 (optional)
 
 try:
     # 标记一个仓库里的通知为已读
-    api_instance.put_v5_repos_owner_repo_notifications(owner, repo, body=body)
+    api_instance.put_v5_repos_owner_repo_notifications(owner, repo, access_token=access_token, ids=ids)
 except ApiException as e:
     print("Exception when calling ActivityApi->put_v5_repos_owner_repo_notifications: %s\n" % e)
 ```
@@ -1688,7 +1698,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **owner** | **str**| 仓库所属空间地址(企业、组织或个人的地址path) | 
  **repo** | **str**| 仓库路径(path) | 
- **body** | [**RepoNotificationsBody**](RepoNotificationsBody.md)|  | [optional] 
+ **access_token** | **str**| 用户授权码 | [optional] 
+ **ids** | **str**| 指定一组通知 ID，以 , 分隔 | [optional] 
 
 ### Return type
 
@@ -1701,12 +1712,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json, multipart/form-data
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **put_v5_user_starred_owner_repo**
-> put_v5_user_starred_owner_repo(owner, repo, body=body)
+> put_v5_user_starred_owner_repo(owner, repo, access_token=access_token)
 
 star 一个仓库
 
@@ -1724,11 +1735,11 @@ from pprint import pprint
 api_instance = gitee.ActivityApi()
 owner = 'owner_example' # str | 仓库所属空间地址(企业、组织或个人的地址path)
 repo = 'repo_example' # str | 仓库路径(path)
-body = gitee.OwnerRepoBody() # OwnerRepoBody |  (optional)
+access_token = 'access_token_example' # str | 用户授权码 (optional)
 
 try:
     # star 一个仓库
-    api_instance.put_v5_user_starred_owner_repo(owner, repo, body=body)
+    api_instance.put_v5_user_starred_owner_repo(owner, repo, access_token=access_token)
 except ApiException as e:
     print("Exception when calling ActivityApi->put_v5_user_starred_owner_repo: %s\n" % e)
 ```
@@ -1739,7 +1750,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **owner** | **str**| 仓库所属空间地址(企业、组织或个人的地址path) | 
  **repo** | **str**| 仓库路径(path) | 
- **body** | [**OwnerRepoBody**](OwnerRepoBody.md)|  | [optional] 
+ **access_token** | **str**| 用户授权码 | [optional] 
 
 ### Return type
 
@@ -1752,12 +1763,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json, multipart/form-data
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **put_v5_user_subscriptions_owner_repo**
-> put_v5_user_subscriptions_owner_repo(body, owner, repo)
+> put_v5_user_subscriptions_owner_repo(owner, repo, watch_type, access_token=access_token)
 
 watch 一个仓库
 
@@ -1773,13 +1784,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = gitee.ActivityApi()
-body = gitee.OwnerRepoBody2() # OwnerRepoBody2 | 
 owner = 'owner_example' # str | 仓库所属空间地址(企业、组织或个人的地址path)
 repo = 'repo_example' # str | 仓库路径(path)
+watch_type = 'watching' # str | watch策略, watching: 关注所有动态, releases_only: 仅关注版本发行动态, ignoring: 关注但不提醒动态 (default to watching)
+access_token = 'access_token_example' # str | 用户授权码 (optional)
 
 try:
     # watch 一个仓库
-    api_instance.put_v5_user_subscriptions_owner_repo(body, owner, repo)
+    api_instance.put_v5_user_subscriptions_owner_repo(owner, repo, watch_type, access_token=access_token)
 except ApiException as e:
     print("Exception when calling ActivityApi->put_v5_user_subscriptions_owner_repo: %s\n" % e)
 ```
@@ -1788,9 +1800,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**OwnerRepoBody2**](OwnerRepoBody2.md)|  | 
  **owner** | **str**| 仓库所属空间地址(企业、组织或个人的地址path) | 
  **repo** | **str**| 仓库路径(path) | 
+ **watch_type** | **str**| watch策略, watching: 关注所有动态, releases_only: 仅关注版本发行动态, ignoring: 关注但不提醒动态 | [default to watching]
+ **access_token** | **str**| 用户授权码 | [optional] 
 
 ### Return type
 
@@ -1803,7 +1816,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json, multipart/form-data
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 

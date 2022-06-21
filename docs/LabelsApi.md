@@ -1,6 +1,6 @@
 # gitee.LabelsApi
 
-All URIs are relative to *//gitee.com/api*
+All URIs are relative to *https://gitee.com/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -18,6 +18,7 @@ Method | HTTP request | Description
 [**post_v5_repos_owner_repo_project_labels**](LabelsApi.md#post_v5_repos_owner_repo_project_labels) | **POST** /v5/repos/{owner}/{repo}/project_labels | 添加仓库标签
 [**put_v5_repos_owner_repo_issues_number_labels**](LabelsApi.md#put_v5_repos_owner_repo_issues_number_labels) | **PUT** /v5/repos/{owner}/{repo}/issues/{number}/labels | 替换Issue所有标签
 [**put_v5_repos_owner_repo_project_labels**](LabelsApi.md#put_v5_repos_owner_repo_project_labels) | **PUT** /v5/repos/{owner}/{repo}/project_labels | 替换所有仓库标签
+
 
 # **delete_v5_repos_owner_repo_issues_number_labels**
 > delete_v5_repos_owner_repo_issues_number_labels(owner, repo, number, access_token=access_token)
@@ -67,8 +68,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -122,8 +123,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -175,8 +176,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -225,7 +226,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -277,7 +278,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -331,7 +332,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -383,7 +384,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -437,13 +438,13 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_v5_repos_owner_repo_labels_original_name**
-> Label patch_v5_repos_owner_repo_labels_original_name(owner, repo, original_name, body=body)
+> Label patch_v5_repos_owner_repo_labels_original_name(owner, repo, original_name, access_token=access_token, name=name, color=color)
 
 更新一个仓库任务标签
 
@@ -462,11 +463,13 @@ api_instance = gitee.LabelsApi()
 owner = 'owner_example' # str | 仓库所属空间地址(企业、组织或个人的地址path)
 repo = 'repo_example' # str | 仓库路径(path)
 original_name = 'original_name_example' # str | 标签原有名称
-body = gitee.LabelsOriginalNameBody() # LabelsOriginalNameBody |  (optional)
+access_token = 'access_token_example' # str | 用户授权码 (optional)
+name = 'name_example' # str | 标签新名称 (optional)
+color = 'color_example' # str | 标签新颜色 (optional)
 
 try:
     # 更新一个仓库任务标签
-    api_response = api_instance.patch_v5_repos_owner_repo_labels_original_name(owner, repo, original_name, body=body)
+    api_response = api_instance.patch_v5_repos_owner_repo_labels_original_name(owner, repo, original_name, access_token=access_token, name=name, color=color)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling LabelsApi->patch_v5_repos_owner_repo_labels_original_name: %s\n" % e)
@@ -479,7 +482,9 @@ Name | Type | Description  | Notes
  **owner** | **str**| 仓库所属空间地址(企业、组织或个人的地址path) | 
  **repo** | **str**| 仓库路径(path) | 
  **original_name** | **str**| 标签原有名称 | 
- **body** | [**LabelsOriginalNameBody**](LabelsOriginalNameBody.md)|  | [optional] 
+ **access_token** | **str**| 用户授权码 | [optional] 
+ **name** | **str**| 标签新名称 | [optional] 
+ **color** | **str**| 标签新颜色 | [optional] 
 
 ### Return type
 
@@ -497,7 +502,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **post_v5_repos_owner_repo_issues_number_labels**
-> list[Label] post_v5_repos_owner_repo_issues_number_labels(body, owner, repo, number)
+> list[Label] post_v5_repos_owner_repo_issues_number_labels(owner, repo, number, body)
 
 创建Issue标签
 
@@ -513,14 +518,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = gitee.LabelsApi()
-body = gitee.PullRequestLabelPostParam() # PullRequestLabelPostParam | 必选，标签的内容
 owner = 'owner_example' # str | 仓库所属空间地址(企业、组织或个人的地址path)
 repo = 'repo_example' # str | 仓库路径(path)
 number = 'number_example' # str | Issue 编号(区分大小写，无需添加 # 号)
+body = gitee.PullRequestLabelPostParam() # PullRequestLabelPostParam | 必选，标签的内容
 
 try:
     # 创建Issue标签
-    api_response = api_instance.post_v5_repos_owner_repo_issues_number_labels(body, owner, repo, number)
+    api_response = api_instance.post_v5_repos_owner_repo_issues_number_labels(owner, repo, number, body)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling LabelsApi->post_v5_repos_owner_repo_issues_number_labels: %s\n" % e)
@@ -530,10 +535,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**PullRequestLabelPostParam**](PullRequestLabelPostParam.md)| 必选，标签的内容 | 
  **owner** | **str**| 仓库所属空间地址(企业、组织或个人的地址path) | 
  **repo** | **str**| 仓库路径(path) | 
  **number** | **str**| Issue 编号(区分大小写，无需添加 # 号) | 
+ **body** | [**PullRequestLabelPostParam**](PullRequestLabelPostParam.md)| 必选，标签的内容 | 
 
 ### Return type
 
@@ -551,7 +556,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **post_v5_repos_owner_repo_labels**
-> Label post_v5_repos_owner_repo_labels(body, owner, repo)
+> Label post_v5_repos_owner_repo_labels(owner, repo, body)
 
 创建仓库任务标签
 
@@ -567,13 +572,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = gitee.LabelsApi()
-body = gitee.LabelPostParam() # LabelPostParam | 必选，标签的内容
 owner = 'owner_example' # str | 仓库所属空间地址(企业、组织或个人的地址path)
 repo = 'repo_example' # str | 仓库路径(path)
+body = gitee.LabelPostParam() # LabelPostParam | 必选，标签的内容
 
 try:
     # 创建仓库任务标签
-    api_response = api_instance.post_v5_repos_owner_repo_labels(body, owner, repo)
+    api_response = api_instance.post_v5_repos_owner_repo_labels(owner, repo, body)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling LabelsApi->post_v5_repos_owner_repo_labels: %s\n" % e)
@@ -583,9 +588,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**LabelPostParam**](LabelPostParam.md)| 必选，标签的内容 | 
  **owner** | **str**| 仓库所属空间地址(企业、组织或个人的地址path) | 
  **repo** | **str**| 仓库路径(path) | 
+ **body** | [**LabelPostParam**](LabelPostParam.md)| 必选，标签的内容 | 
 
 ### Return type
 
@@ -603,7 +608,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **post_v5_repos_owner_repo_project_labels**
-> list[ProjectLabel] post_v5_repos_owner_repo_project_labels(body, owner, repo)
+> list[ProjectLabel] post_v5_repos_owner_repo_project_labels(owner, repo, body)
 
 添加仓库标签
 
@@ -619,13 +624,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = gitee.LabelsApi()
-body = gitee.PullRequestLabelPostParam() # PullRequestLabelPostParam | 必选，标签的内容
 owner = 'owner_example' # str | 仓库所属空间地址(企业、组织或个人的地址path)
 repo = 'repo_example' # str | 仓库路径(path)
+body = gitee.PullRequestLabelPostParam() # PullRequestLabelPostParam | 必选，标签的内容
 
 try:
     # 添加仓库标签
-    api_response = api_instance.post_v5_repos_owner_repo_project_labels(body, owner, repo)
+    api_response = api_instance.post_v5_repos_owner_repo_project_labels(owner, repo, body)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling LabelsApi->post_v5_repos_owner_repo_project_labels: %s\n" % e)
@@ -635,9 +640,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**PullRequestLabelPostParam**](PullRequestLabelPostParam.md)| 必选，标签的内容 | 
  **owner** | **str**| 仓库所属空间地址(企业、组织或个人的地址path) | 
  **repo** | **str**| 仓库路径(path) | 
+ **body** | [**PullRequestLabelPostParam**](PullRequestLabelPostParam.md)| 必选，标签的内容 | 
 
 ### Return type
 
@@ -655,7 +660,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **put_v5_repos_owner_repo_issues_number_labels**
-> list[Label] put_v5_repos_owner_repo_issues_number_labels(body, owner, repo, number)
+> list[Label] put_v5_repos_owner_repo_issues_number_labels(owner, repo, number, body)
 
 替换Issue所有标签
 
@@ -671,14 +676,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = gitee.LabelsApi()
-body = gitee.PullRequestLabelPostParam() # PullRequestLabelPostParam | 必选，标签的内容
 owner = 'owner_example' # str | 仓库所属空间地址(企业、组织或个人的地址path)
 repo = 'repo_example' # str | 仓库路径(path)
 number = 'number_example' # str | Issue 编号(区分大小写，无需添加 # 号)
+body = gitee.PullRequestLabelPostParam() # PullRequestLabelPostParam | 必选，标签的内容
 
 try:
     # 替换Issue所有标签
-    api_response = api_instance.put_v5_repos_owner_repo_issues_number_labels(body, owner, repo, number)
+    api_response = api_instance.put_v5_repos_owner_repo_issues_number_labels(owner, repo, number, body)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling LabelsApi->put_v5_repos_owner_repo_issues_number_labels: %s\n" % e)
@@ -688,10 +693,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**PullRequestLabelPostParam**](PullRequestLabelPostParam.md)| 必选，标签的内容 | 
  **owner** | **str**| 仓库所属空间地址(企业、组织或个人的地址path) | 
  **repo** | **str**| 仓库路径(path) | 
  **number** | **str**| Issue 编号(区分大小写，无需添加 # 号) | 
+ **body** | [**PullRequestLabelPostParam**](PullRequestLabelPostParam.md)| 必选，标签的内容 | 
 
 ### Return type
 
@@ -709,7 +714,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **put_v5_repos_owner_repo_project_labels**
-> list[ProjectLabel] put_v5_repos_owner_repo_project_labels(body, owner, repo)
+> list[ProjectLabel] put_v5_repos_owner_repo_project_labels(owner, repo, body)
 
 替换所有仓库标签
 
@@ -725,13 +730,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = gitee.LabelsApi()
-body = gitee.PullRequestLabelPostParam() # PullRequestLabelPostParam | 必选，标签的内容
 owner = 'owner_example' # str | 仓库所属空间地址(企业、组织或个人的地址path)
 repo = 'repo_example' # str | 仓库路径(path)
+body = gitee.PullRequestLabelPostParam() # PullRequestLabelPostParam | 必选，标签的内容
 
 try:
     # 替换所有仓库标签
-    api_response = api_instance.put_v5_repos_owner_repo_project_labels(body, owner, repo)
+    api_response = api_instance.put_v5_repos_owner_repo_project_labels(owner, repo, body)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling LabelsApi->put_v5_repos_owner_repo_project_labels: %s\n" % e)
@@ -741,9 +746,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**PullRequestLabelPostParam**](PullRequestLabelPostParam.md)| 必选，标签的内容 | 
  **owner** | **str**| 仓库所属空间地址(企业、组织或个人的地址path) | 
  **repo** | **str**| 仓库路径(path) | 
+ **body** | [**PullRequestLabelPostParam**](PullRequestLabelPostParam.md)| 必选，标签的内容 | 
 
 ### Return type
 

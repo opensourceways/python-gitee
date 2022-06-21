@@ -1,6 +1,6 @@
 # gitee.SearchApi
 
-All URIs are relative to *//gitee.com/api*
+All URIs are relative to *https://gitee.com/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -8,6 +8,7 @@ Method | HTTP request | Description
 [**get_v5_search_issues**](SearchApi.md#get_v5_search_issues) | **GET** /v5/search/issues | 搜索 Issues
 [**get_v5_search_repositories**](SearchApi.md#get_v5_search_repositories) | **GET** /v5/search/repositories | 搜索仓库
 [**get_v5_search_users**](SearchApi.md#get_v5_search_users) | **GET** /v5/search/users | 搜索用户
+
 
 # **get_v5_search_gists**
 > list[Code] get_v5_search_gists(q, access_token=access_token, page=page, per_page=per_page, language=language, owner=owner, sort=sort, order=order)
@@ -66,7 +67,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -136,7 +137,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -200,7 +201,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -258,7 +259,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

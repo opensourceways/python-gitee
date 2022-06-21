@@ -1,6 +1,6 @@
 # gitee.EnterprisesApi
 
-All URIs are relative to *//gitee.com/api*
+All URIs are relative to *https://gitee.com/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -19,6 +19,7 @@ Method | HTTP request | Description
 [**post_v5_enterprises_enterprise_week_report**](EnterprisesApi.md#post_v5_enterprises_enterprise_week_report) | **POST** /v5/enterprises/{enterprise}/week_report | 新建周报
 [**post_v5_enterprises_enterprise_week_reports_id_comment**](EnterprisesApi.md#post_v5_enterprises_enterprise_week_reports_id_comment) | **POST** /v5/enterprises/{enterprise}/week_reports/{id}/comment | 评论周报
 [**put_v5_enterprises_enterprise_members_username**](EnterprisesApi.md#put_v5_enterprises_enterprise_members_username) | **PUT** /v5/enterprises/{enterprise}/members/{username} | 修改企业成员权限或备注
+
 
 # **delete_v5_enterprises_enterprise_members_username**
 > delete_v5_enterprises_enterprise_members_username(enterprise, username, access_token=access_token)
@@ -66,8 +67,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -119,8 +120,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -169,7 +170,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -221,7 +222,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -273,7 +274,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -329,7 +330,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -391,7 +392,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -443,7 +444,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -499,7 +500,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -553,13 +554,13 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_v5_enterprises_enterprise_week_report_id**
-> WeekReport patch_v5_enterprises_enterprise_week_report_id(body, enterprise, id)
+> WeekReport patch_v5_enterprises_enterprise_week_report_id(enterprise, id, content, access_token=access_token)
 
 编辑周报
 
@@ -575,13 +576,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = gitee.EnterprisesApi()
-body = gitee.WeekReportIdBody() # WeekReportIdBody | 
 enterprise = 'enterprise_example' # str | 企业的路径(path/login)
 id = 56 # int | 周报ID
+content = 'content_example' # str | 周报内容
+access_token = 'access_token_example' # str | 用户授权码 (optional)
 
 try:
     # 编辑周报
-    api_response = api_instance.patch_v5_enterprises_enterprise_week_report_id(body, enterprise, id)
+    api_response = api_instance.patch_v5_enterprises_enterprise_week_report_id(enterprise, id, content, access_token=access_token)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling EnterprisesApi->patch_v5_enterprises_enterprise_week_report_id: %s\n" % e)
@@ -591,9 +593,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**WeekReportIdBody**](WeekReportIdBody.md)|  | 
  **enterprise** | **str**| 企业的路径(path/login) | 
  **id** | **int**| 周报ID | 
+ **content** | **str**| 周报内容 | 
+ **access_token** | **str**| 用户授权码 | [optional] 
 
 ### Return type
 
@@ -611,7 +614,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **post_v5_enterprises_enterprise_members**
-> post_v5_enterprises_enterprise_members(enterprise, body=body)
+> post_v5_enterprises_enterprise_members(enterprise, access_token=access_token, username=username, email=email, outsourced=outsourced, role=role, name=name)
 
 添加或邀请企业成员
 
@@ -628,11 +631,16 @@ from pprint import pprint
 # create an instance of the API class
 api_instance = gitee.EnterprisesApi()
 enterprise = 'enterprise_example' # str | 企业的路径(path/login)
-body = gitee.EnterpriseMembersBody() # EnterpriseMembersBody |  (optional)
+access_token = 'access_token_example' # str | 用户授权码 (optional)
+username = 'username_example' # str | 需要邀请的码云用户名(username/login)，username,email至少填写一个 (optional)
+email = 'email_example' # str | 要添加邮箱地址，若该邮箱未注册则自动创建帐号。username,email至少填写一个 (optional)
+outsourced = true # bool | 是否企业外包成员，默认：否 (optional)
+role = 'member' # str | 企业角色，默认普通成员 (optional) (default to member)
+name = 'name_example' # str | 企业成员真实姓名（备注） (optional)
 
 try:
     # 添加或邀请企业成员
-    api_instance.post_v5_enterprises_enterprise_members(enterprise, body=body)
+    api_instance.post_v5_enterprises_enterprise_members(enterprise, access_token=access_token, username=username, email=email, outsourced=outsourced, role=role, name=name)
 except ApiException as e:
     print("Exception when calling EnterprisesApi->post_v5_enterprises_enterprise_members: %s\n" % e)
 ```
@@ -642,7 +650,12 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **enterprise** | **str**| 企业的路径(path/login) | 
- **body** | [**EnterpriseMembersBody**](EnterpriseMembersBody.md)|  | [optional] 
+ **access_token** | **str**| 用户授权码 | [optional] 
+ **username** | **str**| 需要邀请的码云用户名(username/login)，username,email至少填写一个 | [optional] 
+ **email** | **str**| 要添加邮箱地址，若该邮箱未注册则自动创建帐号。username,email至少填写一个 | [optional] 
+ **outsourced** | **bool**| 是否企业外包成员，默认：否 | [optional] 
+ **role** | **str**| 企业角色，默认普通成员 | [optional] [default to member]
+ **name** | **str**| 企业成员真实姓名（备注） | [optional] 
 
 ### Return type
 
@@ -655,12 +668,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json, multipart/form-data
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **post_v5_enterprises_enterprise_week_report**
-> WeekReport post_v5_enterprises_enterprise_week_report(body, enterprise)
+> WeekReport post_v5_enterprises_enterprise_week_report(enterprise, year, content, week_index, username, access_token=access_token, _date=_date)
 
 新建周报
 
@@ -676,12 +689,17 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = gitee.EnterprisesApi()
-body = gitee.EnterpriseWeekReportBody() # EnterpriseWeekReportBody | 
 enterprise = 'enterprise_example' # str | 企业的路径(path/login)
+year = 56 # int | 周报所属年
+content = 'content_example' # str | 周报内容
+week_index = 56 # int | 周报所属周
+username = 'username_example' # str | 用户名(username/login)
+access_token = 'access_token_example' # str | 用户授权码 (optional)
+_date = '_date_example' # str | 周报日期(格式：2019-03-25) (optional)
 
 try:
     # 新建周报
-    api_response = api_instance.post_v5_enterprises_enterprise_week_report(body, enterprise)
+    api_response = api_instance.post_v5_enterprises_enterprise_week_report(enterprise, year, content, week_index, username, access_token=access_token, _date=_date)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling EnterprisesApi->post_v5_enterprises_enterprise_week_report: %s\n" % e)
@@ -691,8 +709,13 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**EnterpriseWeekReportBody**](EnterpriseWeekReportBody.md)|  | 
  **enterprise** | **str**| 企业的路径(path/login) | 
+ **year** | **int**| 周报所属年 | 
+ **content** | **str**| 周报内容 | 
+ **week_index** | **int**| 周报所属周 | 
+ **username** | **str**| 用户名(username/login) | 
+ **access_token** | **str**| 用户授权码 | [optional] 
+ **_date** | **str**| 周报日期(格式：2019-03-25) | [optional] 
 
 ### Return type
 
@@ -710,7 +733,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **post_v5_enterprises_enterprise_week_reports_id_comment**
-> Note post_v5_enterprises_enterprise_week_reports_id_comment(body, enterprise, id)
+> Note post_v5_enterprises_enterprise_week_reports_id_comment(enterprise, id, body, access_token=access_token)
 
 评论周报
 
@@ -726,13 +749,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = gitee.EnterprisesApi()
-body = gitee.IdCommentBody() # IdCommentBody | 
 enterprise = 'enterprise_example' # str | 企业的路径(path/login)
 id = 56 # int | 周报ID
+body = 'body_example' # str | 评论的内容
+access_token = 'access_token_example' # str | 用户授权码 (optional)
 
 try:
     # 评论周报
-    api_response = api_instance.post_v5_enterprises_enterprise_week_reports_id_comment(body, enterprise, id)
+    api_response = api_instance.post_v5_enterprises_enterprise_week_reports_id_comment(enterprise, id, body, access_token=access_token)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling EnterprisesApi->post_v5_enterprises_enterprise_week_reports_id_comment: %s\n" % e)
@@ -742,9 +766,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**IdCommentBody**](IdCommentBody.md)|  | 
  **enterprise** | **str**| 企业的路径(path/login) | 
  **id** | **int**| 周报ID | 
+ **body** | **str**| 评论的内容 | 
+ **access_token** | **str**| 用户授权码 | [optional] 
 
 ### Return type
 
@@ -762,7 +787,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **put_v5_enterprises_enterprise_members_username**
-> EnterpriseMember put_v5_enterprises_enterprise_members_username(enterprise, username, body=body)
+> EnterpriseMember put_v5_enterprises_enterprise_members_username(enterprise, username, access_token=access_token, outsourced=outsourced, role=role, active=active, name=name)
 
 修改企业成员权限或备注
 
@@ -780,11 +805,15 @@ from pprint import pprint
 api_instance = gitee.EnterprisesApi()
 enterprise = 'enterprise_example' # str | 企业的路径(path/login)
 username = 'username_example' # str | 用户名(username/login)
-body = gitee.MembersUsernameBody() # MembersUsernameBody |  (optional)
+access_token = 'access_token_example' # str | 用户授权码 (optional)
+outsourced = true # bool | 是否企业外包成员，默认：否 (optional)
+role = 'member' # str | 企业角色，默认普通成员 (optional) (default to member)
+active = true # bool | 是否可访问企业资源，默认:是。（若选否则禁止该用户访问企业资源） (optional) (default to true)
+name = 'name_example' # str | 企业成员真实姓名（备注） (optional)
 
 try:
     # 修改企业成员权限或备注
-    api_response = api_instance.put_v5_enterprises_enterprise_members_username(enterprise, username, body=body)
+    api_response = api_instance.put_v5_enterprises_enterprise_members_username(enterprise, username, access_token=access_token, outsourced=outsourced, role=role, active=active, name=name)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling EnterprisesApi->put_v5_enterprises_enterprise_members_username: %s\n" % e)
@@ -796,7 +825,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **enterprise** | **str**| 企业的路径(path/login) | 
  **username** | **str**| 用户名(username/login) | 
- **body** | [**MembersUsernameBody**](MembersUsernameBody.md)|  | [optional] 
+ **access_token** | **str**| 用户授权码 | [optional] 
+ **outsourced** | **bool**| 是否企业外包成员，默认：否 | [optional] 
+ **role** | **str**| 企业角色，默认普通成员 | [optional] [default to member]
+ **active** | **bool**| 是否可访问企业资源，默认:是。（若选否则禁止该用户访问企业资源） | [optional] [default to true]
+ **name** | **str**| 企业成员真实姓名（备注） | [optional] 
 
 ### Return type
 

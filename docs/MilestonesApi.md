@@ -1,6 +1,6 @@
 # gitee.MilestonesApi
 
-All URIs are relative to *//gitee.com/api*
+All URIs are relative to *https://gitee.com/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**get_v5_repos_owner_repo_milestones_number**](MilestonesApi.md#get_v5_repos_owner_repo_milestones_number) | **GET** /v5/repos/{owner}/{repo}/milestones/{number} | 获取仓库单个里程碑
 [**patch_v5_repos_owner_repo_milestones_number**](MilestonesApi.md#patch_v5_repos_owner_repo_milestones_number) | **PATCH** /v5/repos/{owner}/{repo}/milestones/{number} | 更新仓库里程碑
 [**post_v5_repos_owner_repo_milestones**](MilestonesApi.md#post_v5_repos_owner_repo_milestones) | **POST** /v5/repos/{owner}/{repo}/milestones | 创建仓库里程碑
+
 
 # **delete_v5_repos_owner_repo_milestones_number**
 > delete_v5_repos_owner_repo_milestones_number(owner, repo, number, access_token=access_token)
@@ -58,8 +59,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -120,7 +121,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -174,13 +175,13 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_v5_repos_owner_repo_milestones_number**
-> Milestone patch_v5_repos_owner_repo_milestones_number(body, owner, repo, number)
+> Milestone patch_v5_repos_owner_repo_milestones_number(owner, repo, number, title, due_on, access_token=access_token, state=state, description=description)
 
 更新仓库里程碑
 
@@ -196,14 +197,18 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = gitee.MilestonesApi()
-body = gitee.MilestonesNumberBody() # MilestonesNumberBody | 
 owner = 'owner_example' # str | 仓库所属空间地址(企业、组织或个人的地址path)
 repo = 'repo_example' # str | 仓库路径(path)
 number = 56 # int | 里程碑序号(id)
+title = 'title_example' # str | 里程碑标题
+due_on = 'due_on_example' # str | 里程碑的截止日期
+access_token = 'access_token_example' # str | 用户授权码 (optional)
+state = 'open' # str | 里程碑状态: open, closed, all。默认: open (optional) (default to open)
+description = 'description_example' # str | 里程碑具体描述 (optional)
 
 try:
     # 更新仓库里程碑
-    api_response = api_instance.patch_v5_repos_owner_repo_milestones_number(body, owner, repo, number)
+    api_response = api_instance.patch_v5_repos_owner_repo_milestones_number(owner, repo, number, title, due_on, access_token=access_token, state=state, description=description)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling MilestonesApi->patch_v5_repos_owner_repo_milestones_number: %s\n" % e)
@@ -213,10 +218,14 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**MilestonesNumberBody**](MilestonesNumberBody.md)|  | 
  **owner** | **str**| 仓库所属空间地址(企业、组织或个人的地址path) | 
  **repo** | **str**| 仓库路径(path) | 
  **number** | **int**| 里程碑序号(id) | 
+ **title** | **str**| 里程碑标题 | 
+ **due_on** | **str**| 里程碑的截止日期 | 
+ **access_token** | **str**| 用户授权码 | [optional] 
+ **state** | **str**| 里程碑状态: open, closed, all。默认: open | [optional] [default to open]
+ **description** | **str**| 里程碑具体描述 | [optional] 
 
 ### Return type
 
@@ -234,7 +243,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **post_v5_repos_owner_repo_milestones**
-> Milestone post_v5_repos_owner_repo_milestones(body, owner, repo)
+> Milestone post_v5_repos_owner_repo_milestones(owner, repo, title, due_on, access_token=access_token, state=state, description=description)
 
 创建仓库里程碑
 
@@ -250,13 +259,17 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = gitee.MilestonesApi()
-body = gitee.RepoMilestonesBody() # RepoMilestonesBody | 
 owner = 'owner_example' # str | 仓库所属空间地址(企业、组织或个人的地址path)
 repo = 'repo_example' # str | 仓库路径(path)
+title = 'title_example' # str | 里程碑标题
+due_on = 'due_on_example' # str | 里程碑的截止日期
+access_token = 'access_token_example' # str | 用户授权码 (optional)
+state = 'open' # str | 里程碑状态: open, closed, all。默认: open (optional) (default to open)
+description = 'description_example' # str | 里程碑具体描述 (optional)
 
 try:
     # 创建仓库里程碑
-    api_response = api_instance.post_v5_repos_owner_repo_milestones(body, owner, repo)
+    api_response = api_instance.post_v5_repos_owner_repo_milestones(owner, repo, title, due_on, access_token=access_token, state=state, description=description)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling MilestonesApi->post_v5_repos_owner_repo_milestones: %s\n" % e)
@@ -266,9 +279,13 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**RepoMilestonesBody**](RepoMilestonesBody.md)|  | 
  **owner** | **str**| 仓库所属空间地址(企业、组织或个人的地址path) | 
  **repo** | **str**| 仓库路径(path) | 
+ **title** | **str**| 里程碑标题 | 
+ **due_on** | **str**| 里程碑的截止日期 | 
+ **access_token** | **str**| 用户授权码 | [optional] 
+ **state** | **str**| 里程碑状态: open, closed, all。默认: open | [optional] [default to open]
+ **description** | **str**| 里程碑具体描述 | [optional] 
 
 ### Return type
 
