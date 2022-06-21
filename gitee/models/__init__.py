@@ -116,7 +116,6 @@ from gitee.models.hook_event_models import MilestoneHook
 from gitee.models.hook_event_models import BranchHook
 from gitee.models.hook_event_models import PullRequestHook
 from gitee.models.hook_event_types import NoteEvent
-from gitee.models.hook_event_types import NoteEvent
 from gitee.models.hook_event_types import IssueEvent
 from gitee.models.hook_event_types import RepoInfo
 from gitee.models.hook_event_types import PullRequestEvent
