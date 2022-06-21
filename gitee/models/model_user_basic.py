@@ -3,7 +3,7 @@ from typing import Optional
 
 
 @dataclass
-class UserBasic:
+class ModelUserBasic:
     id: Optional[int] = 0
     login: Optional[str] = ""
     name: Optional[str] = ""

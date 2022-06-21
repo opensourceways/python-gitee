@@ -1,7 +1,7 @@
 from dataclasses import dataclass, field
 from typing import List, Optional
 
-from gitee.models.model_issue import Issue
+from gitee.models.model_issue import ModelIssue
 
 
 @dataclass
@@ -153,8 +153,8 @@ class PullRequestHook:
     additions: Optional[int] = 0
     deletions: Optional[int] = 0
     changed_files: Optional[int] = 0
-    issues: Optional[List[Issue]] = field(default_factory=list)
-    stale_issues: Optional[List[Issue]] = field(default_factory=list)
+    issues: Optional[List[ModelIssue]] = field(default_factory=list)
+    stale_issues: Optional[List[ModelIssue]] = field(default_factory=list)
 
 
 # IssueHook : issue 信息

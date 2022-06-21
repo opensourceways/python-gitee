@@ -3,7 +3,7 @@ from typing import Optional
 
 
 @dataclass
-class Label:
+class ModelLabel:
     id: Optional[int] = 0
     name: Optional[str] = ""
     color: Optional[str] = ""

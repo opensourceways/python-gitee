@@ -118,11 +118,11 @@ from gitee.models.user_notification_list import UserNotificationList
 from gitee.models.user_notification_namespace import UserNotificationNamespace
 from gitee.models.user_notification_subject import UserNotificationSubject
 from gitee.models.week_report import WeekReport
-from gitee.models.model_issue import Issue
-from gitee.models.model_milestone import Milestone
-from gitee.models.model_program_basic import ProgramBasic
-from gitee.models.model_user_basic import UserBasic
-from gitee.models.model_label import Label
+from gitee.models.model_issue import ModelIssue
+from gitee.models.model_milestone import ModelMilestone
+from gitee.models.model_program_basic import ModelProgramBasic
+from gitee.models.model_user_basic import ModelUserBasic
+from gitee.models.model_label import ModelLabel
 from gitee.models.hook_event_models import IssueHook
 from gitee.models.hook_event_models import ProjectHook
 from gitee.models.hook_event_models import CommitHook

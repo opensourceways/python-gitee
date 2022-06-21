@@ -8,7 +8,7 @@ from gitee.models.model_user_basic import UserBasic
 
 
 @dataclass
-class Issue:
+class ModelIssue:
     id: Optional[int] = 0
     url: Optional[str] = ""
     repository_url: Optional[str] = ""
