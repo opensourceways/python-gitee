@@ -153,4 +153,7 @@ from gitee.models.hook_event_helper import PR_ACTION_UPDATED_LABEL
 from gitee.models.hook_event_helper import PR_ACTION_CHANGED_TARGET_BRANCH
 from gitee.models.hook_event_helper import PR_ACTION_CHANGED_SOURCE_BRANCH
 from gitee.models.hook_event_helper import ACTION_ADD_LABEL
-from gitee.models import converter
+from gitee.models.converter import convert_to_push_event
+from gitee.models.converter import convert_to_note_event
+from gitee.models.converter import convert_to_issue_event
+from gitee.models.converter import convert_to_pr_event
