@@ -3,7 +3,7 @@ from typing import Optional
 
 
 @dataclass
-class Milestone:
+class ModelMilestone:
     url: Optional[str] = ""
     html_url: Optional[str] = ""
     number: Optional[int] = 0
