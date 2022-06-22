@@ -1,10 +1,10 @@
 from dataclasses import dataclass, field
 from typing import List, Optional
 
-from gitee.models.model_label import Label
-from gitee.models.model_milestone import Milestone
-from gitee.models.model_program_basic import ProgramBasic
-from gitee.models.model_user_basic import UserBasic
+from gitee.models.model_label import ModelLabel
+from gitee.models.model_milestone import ModelMilestone
+from gitee.models.model_program_basic import ModelProgramBasic
+from gitee.models.model_user_basic import ModelUserBasic
 
 
 @dataclass
@@ -21,12 +21,12 @@ class ModelIssue:
     title: Optional[str] = ""
     body: Optional[str] = ""
     body_html: Optional[str] = ""
-    user: Optional[UserBasic] = UserBasic()
-    labels: Optional[List[Label]] = field(default_factory=list)
-    assignee: Optional[UserBasic] = UserBasic()
-    collaborators: Optional[List[UserBasic]] = field(default_factory=list)
+    user: Optional[ModelUserBasic] = ModelUserBasic()
+    labels: Optional[List[ModelLabel]] = field(default_factory=list)
+    assignee: Optional[ModelUserBasic] = ModelUserBasic()
+    collaborators: Optional[List[ModelUserBasic]] = field(default_factory=list)
     repository: Optional[str] = ""
-    milestone: Optional[Milestone] = Milestone()
+    milestone: Optional[ModelMilestone] = ModelMilestone()
     created_at: Optional[str] = ""
     updated_at: Optional[str] = ""
     plan_started_at: Optional[str] = ""
@@ -35,4 +35,4 @@ class ModelIssue:
     scheduled_time: Optional[str] = ""
     comments: Optional[int] = 0
     issue_type: Optional[str] = ""
-    program: Optional[ProgramBasic] = ProgramBasic()
+    program: Optional[ModelProgramBasic] = ModelProgramBasic()
