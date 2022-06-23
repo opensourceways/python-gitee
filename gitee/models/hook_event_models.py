@@ -22,7 +22,7 @@ class UserHook:
     avatar_url: Optional[str] = ""
     html_url: Optional[str] = ""
     type: Optional[str] = ""
-    site_admin: Optional[str] = ""
+    site_admin: Optional[bool] = False
     time: Optional[str] = ""
     remark: Optional[str] = ""
 
