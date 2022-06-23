@@ -21,7 +21,7 @@ class NoteEvent(object):
     url: Optional[str] = ""
     note: Optional[str] = ""
     noteable_type: Optional[str] = ""
-    noteable_id: Optional[str] = ""
+    noteable_id: Optional[int] = 0
     title: Optional[str] = ""
     per_iid: Optional[str] = ""
     short_commit_id: Optional[str] = ""
